@@ -1,4 +1,4 @@
-#/usr/bin/env bash
+#!/usr/bin/env bash
 set -e
 echo Create SSH key
 ssh-keygen -q -N '' -f 'pushrun'
