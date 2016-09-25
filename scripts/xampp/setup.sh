@@ -12,3 +12,6 @@ chmod 755 xampp-linux-*-installer.run
 # - After I rebooted my Linux box XAMPP stopped running! How can I fix this?
 ln -s /opt/lampp/lampp /etc/init.d/lampp
 update-rc.d lampp start 80 2 3 4 5 . stop 30 0 1 6 .
+# - Modify PATH
+source /etc/environment
+echo "/opt/lampp/bin:$PATH" >> /etc/environment
