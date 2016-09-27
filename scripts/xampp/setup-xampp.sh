@@ -1,5 +1,6 @@
 #!/usr/bin/env bash
 set -e
+set +x
 # net-tools is needed by the XAMPP start service script.
 # wget is only used to download the installer.
 apt update && apt install net-tools wget -y
