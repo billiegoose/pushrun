@@ -8,3 +8,6 @@ ENV PATH "/opt/lampp/bin:$PATH"
 # MailCatcher layers
 COPY setup-mailcatcher.sh /root/
 RUN bash /root/setup-mailcatcher.sh
+# SSH layers
+COPY setup-ssh.sh /root/
+RUN bash /root/setup-ssh.sh
