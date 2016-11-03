@@ -5,6 +5,9 @@ MAINTAINER William Hilton <wmhilton@gmail.com>
 COPY setup-xampp.sh /root/
 RUN bash /root/setup-xampp.sh
 ENV PATH "/opt/node/bin:/opt/lampp/bin:$PATH"
+# Python layers
+COPY setup-python2.sh /root/
+RUN bash /root/setup-python2.sh
 # MailCatcher layers
 COPY setup-mailcatcher.sh /root/
 RUN bash /root/setup-mailcatcher.sh
