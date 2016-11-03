@@ -14,6 +14,7 @@ mv node-* node
 # - Modify PATH
 source /etc/environment
 echo "PATH=\"/opt/node/bin:$PATH\"" >> /etc/environment
+source /etc/environment
 # Update npm2 to npm3
 npm install --global npm@3
 npm list -g
