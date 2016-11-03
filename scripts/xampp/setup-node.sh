@@ -13,4 +13,4 @@ rm node-*.tar.xz
 mv node-* node
 # - Modify PATH
 source /etc/environment
-echo "/opt/node/bin:$PATH" >> /etc/environment
+echo "PATH=\"/opt/node/bin:$PATH\"" >> /etc/environment
