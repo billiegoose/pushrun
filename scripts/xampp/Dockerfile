@@ -17,3 +17,6 @@ RUN bash /root/setup-ssh.sh
 # Node layers
 COPY setup-node.sh /root/
 RUN bash /root/setup-node.sh
+# Rsync layers
+COPY setup-rsync.sh /root/
+RUN bash /root/setup-rsync.sh
