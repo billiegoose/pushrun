@@ -20,3 +20,6 @@ RUN bash /root/setup-node.sh
 # Rsync layers
 COPY setup-rsync.sh /root/
 RUN bash /root/setup-rsync.sh
+# XVFB layers
+COPY setup-xvfb.sh /root/
+RUN bash /root/setup-xvfb.sh
